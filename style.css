@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,400&display=swap');
+
+:root {
+    --purole500: #281154;
+    --purole300: #270082;
+    --purole600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f9ff;
+    --max-width: 1200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "Roboto" sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+section{
+    scroll-margin: 50px;
+}
+/* nav section */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    margin: 0 auto;
+    color: white;
+}
+header{
+    background-color: var(--purole300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+nav ul li{
+    border-bottom: 1px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+nav ul li:hover{
+    border-bottom: 1px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+/* main section */
+.hero_section{
+    background-image: url(images/hero_image.png);
+    height: 100vh;
+    display: grid;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    place-items: center;
+    text-align: center;
+}
+.hero_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero_section h1{
+    font-size: 96px;
+}
+.hero_section h3{
+    font-size: 32px;
+}
+/* music section */
+.music-section{
+    padding-top: 50px;
+    background-color: var(--purole500);
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.ipad-iphone-img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+button{
+    padding: 10px 5px;
+    border: none;
+    border-radius: 2px;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out; 
+}
+.primary-btn{
+    background-color: var(--red600);
+    color: white;
+}
+.secondary-btn{
+    background-color: var(--purole300);
+    color: white;
+}
+/* about section */
+
+.about-music{
+   padding-top: 500px;
+   display: grid;
+   place-items: center;
+   gap: 50px; 
+   text-align: center;
+   margin-bottom: 50px;
+}
+/* video section */
+.video-section{
+    background-image: url(images/video.png);
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+/* gift card section */
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+.gift-section{
+    scroll-margin: 120px;
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* footer section */
+.footer-upper{
+    background-color: var(--purole600);
+    padding: 20px;
+}
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer-upper h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.fooetr-lower{
+    background-color: var(--purole300);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.fooetr-lower p{
+    padding: 20px 0;
+}
